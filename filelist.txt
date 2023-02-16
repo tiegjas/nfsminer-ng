@@ -1,4 +1,5 @@
 passwd
+password
 shadow
 *.ini
 *.pk12
