@@ -2,22 +2,21 @@
 
 A tool that uses standard Linux tools to enumerate NFS shares.
 
-Dependencies:
+## Dependencies:
 nfs-common
 
-Updates:
-I added flag for setting the depth of folder recursions.
+## Updates:
+I added flags for setting the depth of folder recursions.  
 I updated the file details collected to include:  Permissions, Last Modified Date, and File Size.
 
-Usage:
-
-# ./nfsminer-ng -h
+## Usage:
+```
+$ ./nfsminer-ng -h
 
 NFS Miner
 Created by Tim Jensen @eapolsniper
 BSI CSIR - bsigroup.com
 
----------------------
 -t   --  Text file containing a list of IP's to scan. All exports on each host is scanned.
 -s   --  Single host to scan. Scans all exports on host
 -fd  --  Depth of folder recursions.  Default is 3.
@@ -31,3 +30,4 @@ SLOW (I warned you) options
 ----------------------
 -eg  --  Enable grep scans. Recursively searches all files for keywords
 -gt  --  Grep scan timeout. Set maxiumum scan time for recursive grep scans, per host. Default 10 minutes.
+```
